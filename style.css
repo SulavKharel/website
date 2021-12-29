@@ -33,7 +33,6 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-  overflow: hidden;
 }
 
 .navbar-lewagon .navbar-collapse {
