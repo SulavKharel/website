@@ -1,5 +1,6 @@
 .content{
   padding: 16px;
+  background-color: #222337;
 }
 
 .ml {
@@ -32,7 +33,8 @@
 /*navbar 2*/
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: whitesmoke;
+  color: white;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -153,4 +155,11 @@
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+/*hover*/
+
+.img-hover:hover {
+ opacity: 0.7;
+ cursor: pointer;
 }
