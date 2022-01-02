@@ -167,9 +167,6 @@
 
 /*bottom card*/
 
-.u-center-text {
-  text-align: center !important;
-}
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
@@ -326,7 +323,7 @@
 }
 
 .row1 {
-  max-width: 115rem;
+  max-width: 110rem;
   margin: 0 auto;
 }
 
@@ -343,10 +340,22 @@
 
 .row1 [class^="col-"] {
   float: left;
+
 }
 
 .row1 [class^="col-"]:not(:last-child) {
-  margin-right: 6rem;
+  margin-left: 5rem;
+}
+
+@media (max-width: 767px) {
+  .row1 [class^="col-"]:not(:last-child) {
+  margin-left: 0rem;
+}
+}
+
+
+.row1 [class^="col-"]:not(:first-child) {
+  margin-right: 5rem;
 }
 
 @media (max-width: 767px) {
