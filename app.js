@@ -10,3 +10,10 @@ function myFunction() {
     navbar.classList.remove("sticky-top");
   }
 }
+
+
+  $(document).ready(function () {
+    $(".card-title").hover(function () {
+      $(this).toggleClass("animate__animated animate__pulse animate__slow");
+    });
+  });
