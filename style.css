@@ -1,3 +1,8 @@
+img {
+  max-width:  100%;
+  display:  block;
+}
+
 .content{
   padding: 16px;
   background-color: #222337;
@@ -111,6 +116,10 @@
   }
 }
 
+/*banner */
+.slideIn{
+  animation: 3s linear 1s running slidein;
+}
 
 /*card category*/
 .card-category {
@@ -304,6 +313,7 @@
   text-align: center;
   color: #fff;
   width: 75%;
+  text-align:center;
 }
 
 .card__heading-span {
@@ -361,5 +371,67 @@
 @media (max-width: 767px) {
   .hide {
     display: none;
+  }
+}
+
+
+
+/*Qcard-grid*/
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.Qcard-content{
+  background: white;
+  align-self: end;
+  margin: .5rem .5rem 2rem;
+  padding: .5rem;
+  box-shadow: 0.25rem 1rem rgb(0, 0, 0 / .1);
+}
+
+.Qcard-container{
+  max-width:  100rem;
+  margin-inline:  auto;
+  padding-inline:  auto;
+}
+
+.Qcard-grid {
+  display: grid;
+  grid-gap: .125rem;
+  grid-template-columns:
+    repeat(auto-fit,minmax(15rem,1fr));
+}
+
+.Qcard {
+  aspect-ratio:  1/1.5;
+  /*border: 3px solid hotpink;*/
+}
+
+.Qcard-img {
+  width: 100%;
+  aspect-ratio:  1 / 1.25;
+  object-fit: cover;
+}
+@media (min-width: 40em){
+  .Qcard-img {
+    aspect-ratio:  1 / 1;
+  }
+  .Qcard.featured {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .Qcard.featured .Qcard-img {
+    aspect-ratio:  1 / 1.25;
+  }
+
+  .Qcard.featured .h3 {
+    font-size:  1.75rem;
   }
 }
