@@ -1,3 +1,30 @@
+:root {
+  /*color palatte 1*/
+  --main-primary: #abd699;
+  --main-secondary: #75c9b7;
+  --main-complementary: #ffe26a;
+  --sub-heading:  #c7ddcc ;
+
+/*color palette 2*/
+ /* --main-primary: #A96762;
+  --main-secondary: #2F5C8F;
+  --main-complementary: #d85c27;
+  --sub-heading: #14365d ;*/
+}
+
+body {
+  color: white;
+  background-color: var(--main-primary);
+}
+
+h1, h2{
+  color: var(--main-complementary)!important;
+  /*color: firebrick!importantz ;*/
+}
+
+h3  {
+  color: var(--sub-heading);
+}
 img {
   max-width:  100%;
   display:  block;
@@ -5,7 +32,10 @@ img {
 
 .content{
   padding: 16px;
-  background-color: #222337;
+}
+
+.main-secondary{
+  background-color:  var(--main-secondary);
 }
 
 .ml {
@@ -41,7 +71,7 @@ img {
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: #270705;
+  background: ghostwhite;
   color: white;
 }
 
@@ -50,7 +80,7 @@ img {
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 3rem;
 }
 /*avatar*/
 .avatar {
@@ -203,12 +233,6 @@ img {
   cursor: pointer;
 }
 
-
-.section-plans {
-  background-color:;
-  padding: 4rem;
-}
-
 .card1 {
   -webkit-perspective: 150rem;
           perspective: 150rem;
@@ -232,7 +256,7 @@ img {
 }
 
 .card__side--front{
-  background-color:  dark;
+  background-color: var(--main-secondary);
 }
 
 .card__side--back {
@@ -241,7 +265,7 @@ img {
 }
 
 .card__side--back {
-   background-color:  dark;
+     background-color: var(--main-primary);
 }
 
 
