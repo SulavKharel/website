@@ -64,9 +64,20 @@ img {
 }
 
 .card-img {
-    object-fit:cover;
+  width: 100%;
+  aspect-ratio:  16/9;
+  object-fit: cover;
 }
 
+
+/*@media (min-width: 767px) {
+  .card-img {
+  width: 100%;
+  aspect-ratio:  1/1;
+  object-fit: cover;
+  }
+}
+*/
 .truncate {
   width: 200px;
   text-overflow: ellipsis;
