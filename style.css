@@ -1,20 +1,13 @@
 :root {
-  /*color palatte 1*/
-  --main-primary: #abd699;
-  --main-secondary: #75c9b7;
-  --main-complementary: #ffe26a;
-  --sub-heading:  #c7ddcc ;
 
-/*color palette 2*/
- /* --main-primary: #A96762;
-  --main-secondary: #2F5C8F;
-  --main-complementary: #d85c27;
-  --sub-heading: #14365d ;*/
+  --main-primary: #2F5C8F;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: white;
-  background-color: var(--main-primary);
   font-size: 18px;
 }
 
@@ -24,7 +17,7 @@ h1, h2{
 }
 
 h3  {
-  color: var(--sub-heading);
+  /*color: var(--sub-heading);*/
 }
 img {
   max-width:  100%;
@@ -36,7 +29,8 @@ img {
 }
 
 .main-secondary{
-  background-color:  var(--main-secondary);
+  background-color: white;
+  color: black;
 }
 
 .ml {
@@ -206,7 +200,7 @@ img {
   background: #F4F4F4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: safe center;
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
