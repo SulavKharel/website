@@ -11,15 +11,23 @@ function myFunction() {
   }
 }
 
-
-  $(document).ready(function () {
-    $(".card-title").hover(function () {
-      $(this).toggleClass("animate__animated animate__pulse animate__slow");
-    });
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-lewagon");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
+});
 
-  // $(document).ready(function(){
-  //   $(".wish-icon i").click(function(){
-  //     $(this).toggleClass("fa-heart fa-heart-o");
-  //   });
-  // });
+var textDark = document.getElementById("text-dark");
+
+$(document).ready(function(){
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 100) {
+                $('.nav-link1').css('color', '#000');
+            } else {
+                $('.nav-link1').css('color', '#fff');
+            }
+        });
+    });

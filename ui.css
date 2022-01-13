@@ -16,7 +16,7 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  background: var(--main-primary);
   transition: background 0.3s ease;
 }
 
@@ -39,4 +39,55 @@
 .btn-gradient:hover {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
+}
+
+
+/*BANNER CSS*/
+
+.banner-main {
+  padding: 2% 6% 4% 6%;
+  background-color: black;
+
+
+}
+
+.banner-outer{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  /*padding: .5rem;*/
+  color: white;
+}
+
+.banner-main img {
+  display: block;
+  object-fit: cover;
+  margin: auto;
+  width: 100%;
+  border-radius: 2%;
+}
+
+.carousel-item img {
+  box-shadow: rgba(128, 128, 128, 0.35) 0px 5px 15px;
+
+}
+
+.banner-title {
+  position: absolute;
+  word-break: break-word;
+  text-align: center;
+  right: 15%;
+  left: 15%;
+  bottom: 70px;
+  z-index: 10;
+  padding-bottom: 20px;
+  color:  white;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

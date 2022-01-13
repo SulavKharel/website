@@ -12,12 +12,11 @@ body {
 }
 
 h1, h2{
-  /*color: var(--main-complementary)!important;*/
-  /*color: firebrick!importantz ;*/
+
 }
 
 h3  {
-  /*color: var(--sub-heading);*/
+
 }
 img {
   max-width:  100%;
@@ -81,12 +80,20 @@ img {
 
 
 /*navbar 2*/
-
+.nav-link1 {
+  display: block;
+  padding: 0.5rem 1rem;
+  color:  white;
+}
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: ghostwhite;
-  color: white;
+  background: black;
+}
+
+.navbar-lewagon.scrolled {
+  background-color:  ghostwhite !important;
+  transition: background-color 200ms linear;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -171,11 +178,6 @@ img {
   display: grid;
   grid-template-columns:  1fr;
   align-self: end;
-}
-
-.banner-grid a {
-  max-width:  20rem;
-  align-items:  center;
 }
 
 /*card category*/
