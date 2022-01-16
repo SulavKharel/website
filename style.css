@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
 :root {
 
   --main-primary: #2F5C8F;
@@ -12,7 +14,7 @@ body {
 }
 
 h1, h2{
-
+  font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 h3  {
@@ -21,6 +23,10 @@ h3  {
 img {
   max-width:  100%;
   display:  block;
+}
+
+.caption {
+  font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 .content{
@@ -84,6 +90,7 @@ img {
   display: block;
   padding: 0.5rem 1rem;
   color:  white;
+  font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 .navbar-lewagon {
