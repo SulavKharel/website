@@ -27,6 +27,7 @@ img {
 
 .caption {
   font-family: 'Mochiy Pop P One', sans-serif;
+  text-shadow: 3px 3px black;
 }
 
 .content{
@@ -68,15 +69,6 @@ img {
   object-fit: cover;
 }
 
-
-/*@media (min-width: 767px) {
-  .card-img {
-  width: 100%;
-  aspect-ratio:  1/1;
-  object-fit: cover;
-  }
-}
-*/
 .truncate {
   width: 200px;
   text-overflow: ellipsis;
@@ -110,6 +102,11 @@ img {
 .navbar-lewagon .navbar-brand img {
   width: 3rem;
 }
+
+.navbar-toggler {
+  box-shadow: 10px #4A4A4A !important;
+}
+
 /*avatar*/
 .avatar {
   width: 40px;
