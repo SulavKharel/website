@@ -50,6 +50,7 @@
 
 
   <!-- Banner -->
+<div class="banner-gsap">
 <div class="banner-main" id="top">
 
 <div id="carouselExampleSlidesOnly" class="carousel slide item" data-bs-ride="carousel">
@@ -57,8 +58,8 @@
       <div class="banner-title">
         <div class="caption">
 
-          <span class="alert-heading animate__animated animate__bounce h1 ">日本のアニメについて</span>
-          <a href="#scroll-to" id="" class="btn-flat text-decoration-none scroll" target="scroll-to">Start!</a>
+          <span class="alert-heading animate__animated animate__bounce h1 text-reveal">日本のアニメについて</span>
+          <a href="#scroll-to" id="" class="btn-flat text-decoration-none scroll local" target="scroll-to">Start!</a>
         </div>
       </div>
 
@@ -83,6 +84,7 @@
     </div>
 </div>
 </div>
+</div>
 
 <div class="">
   <!-- card -->
@@ -90,7 +92,7 @@
   <!-- add animation here-->
 <section class="main-secondary">
 
-  <div class="card bg-transparent p-5 my-2" id="item1">
+  <div class="card bg-transparent p-5 my-2 " id="item1">
     <div class="row g-0"    id="scroll-to">
 
       <div class="col-md-5">
@@ -118,7 +120,7 @@
     </div>
   </div>
 
-<div class="card bg-transparent p-5 my-2" id="item1">
+<div class="card bg-transparent p-5 my-2 " id="item1">
     <div class="row g-0">
 
       <div class="col-md-5">
@@ -148,7 +150,7 @@
     </div>
   </div>
 
-  <div class="card bg-transparent p-5 my-2" id="item1">
+  <div class="card bg-transparent p-5 my-2 " id="item1">
     <div class="row g-0">
 
       <div class="col-md-5">
@@ -176,7 +178,7 @@
     </div>
   </div>
 
-  <div class="card bg-transparent p-5 my-2" id="item1">
+  <div class="card bg-transparent p-5 my-2 " id="item1">
     <div class="row g-0">
 
       <div class="col-md-5">
@@ -303,6 +305,45 @@
   <script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    let tl=gsap.timeline();
+
+    tl.from('.banner-main', {
+      scale:0.6,
+      duration:2,
+      opacity:0,
+      ease: Expo.EaseOut,
+      delay: 0.2
+    })
+     .to('.text-reveal', {
+    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+    y:0,
+    stagger: .3,
+    duration: 1}, "-=2.9"
+    )
+   .to('.text-reveal',{
+    clipPath:'polygon(0 0, 100% 0, 100% 0, 0 0)',
+    y:-200,
+    duration: .2,
+    delay: .5
+   })
+    .to('.text-reveal', {
+    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+    y:0,
+    stagger: .3,
+    duration: .3,
+    delay: .5})
+    .to('.local', {
+    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+    y:0,
+    stagger: .3,
+    opacity: 1,
+    duration:1,
+     }, "-=1.4")
+  </script>
+
   <script>
   $(".scroll").on('click', function(e) {
      e.preventDefault();

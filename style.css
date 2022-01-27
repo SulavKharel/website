@@ -177,13 +177,6 @@ img {
 }
 
 /*banner */
-
-.banner-grid {
-  display: grid;
-  grid-template-columns:  1fr;
-  align-self: end;
-}
-
 /*card category*/
 .card-category {
   background-size: cover;
