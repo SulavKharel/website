@@ -14,8 +14,11 @@
 
 .btn-flat {
   color: white;
-  padding: 8px 24px;
+  padding: 8px;
   border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
   background: var(--main-primary);
   transition: background 0.3s ease;
 }
@@ -133,4 +136,60 @@
 .button-card {
   display: flex;
   justify-content: space-between;
+}
+
+
+/*about page*/
+
+.about-card {
+  padding: 8px;
+}
+
+.about-title {
+  text-align: center;
+
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  align-self: center;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+.about-item {
+  background-color: white;
+  padding: 1rem 2rem;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: rgba(0, 0, 0, 1);
+}
+
+.about-item h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  align-self: center;
+}
+
+.about-list-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-list-item {
+  font-size: 1.25rem;
+}
+
+.form-card {
+  margin:2rem auto;
+  width: 60%;
+}
+
+.form-back {
+  background-image: url("img/contact-image.jpg");
 }

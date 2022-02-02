@@ -3,13 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="ui.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Contact</title>
 </head>
 <body>
-  <form action="https://formspree.io/xtremebackagain@gmail.com">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
+  <!-- NAVBAR -->
+
+  <div id="navbar" class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+
+    <a class="navbar-brand pl-3" href="index.html">
+      <img class="avatar" src="img/avatar-new.png"/>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-iconn"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+          <li class="nav-item dropdown">
+            <img class="avatar dropdown-toggle mr-3 hide" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="img/avatar-new.png" />
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#about">About</a>
+              <a class="dropdown-item" href="#contact">Contact</a>
+            </div>
+          </li>
+            <a class="nav-link1 text-decoration-none" id="textDark" href="index.html" >ホーム</a>
+          </li>
+          <li class="nav-item pr-4">
+            <a class="nav-link1 text-decoration-none" id="textDark1"  href="featured.html">注目のアニメ</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- card -->
+
+  <div class="about-card">
+      <div class="about-item">
+        <h2>アニメの歴史</h2>
+        <div class="about-list-flex">
+
+          <div class="about-list-item">
+            <ul>
+                <li class="list-group-item list-group-item-success">
+                日本で最初のアニメーション作品は1917年に製作され。
+              </li>
+              <li class="list-group-item list-group-item-success">
+                1930年前後にセル画が使われ始めるまでは日本ではフランスなどと同様に切り取ったアニメーションが主流でありました。
+              </li>
+              <li class="list-group-item list-group-item-success">
+                1930年前後にセル画が使われ始めるまでは日本ではフランスなどと同様に切り取ったアニメーションが主流でありました。
+              </li>
+              <li class="list-group-item list-group-item-success">
+                1930年前後にセル画が使われ始めるまでは日本ではフランスなどと同様に切り取ったアニメーションが主流でありました。
+              </li>
+              <li class="list-group-item list-group-item-success">1930年前後にセル画が使われ始めるまでは日本ではフランスなどと同様に切り取ったアニメーションが主流でありました。
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-list-item">
+            <ul>
+              <li class="list-group-item list-group-item-success">
+                1953年テレビアニメ開始。<br>
+                <span class="text-muted">今,アニメの時価は2.7兆</span> 
+              </li>
+              <li class="list-group-item list-group-item-success">
+                1970年代の映画業界におけるアニメの需要の増加。
+              </li>
+              <li class="list-group-item list-group-item-success">
+                1980年代のアニメ映画は本数が増加したが、高年齢層を狙った作品は少なく、児童·家族向けの作品が多いでした。
+              </li>
+              <li class="list-group-item list-group-item-success">
+                1990年代はアニメ映画はほぼ毎年のように日本映画の興行成績の上位にありますた。
+              </li>
+              <li class="list-group-item list-group-item-success">
+                2000年代になるとアニメなしでは日本映画は成り立たないとまで言われるほどアニメ作品の比重が増加しました。
+              </li>
+            </ul>  
+          </div>  
+        </div>
+      </div>
+
+    <div class="about-inner"> 
+      <div class="about-item card">
+        <div class="card-body">
+          
+          <h2 class="card-title">アニメがなぜ有名</h2>
+          <p class="lead">幅広いテーマ、幅広い年齢層
+          日本のアニメのテーマはファンタジー、ハイティーンロマンス、スポーツ、SFなど数え切れないほど多様です。 
+          このような自由なテーマはアニメーション制作に大きな制限を置かない日本文化によるものである。
+
+          クオリティの高いBGM
+          特に「バックミュージック」ではポピュラー音楽に劣らないクオリティを誇る。 また、シーンにふさわしい音楽はシナジー効果を発揮して観客に刻まれる
+          </p>
+        </div>
+      </div>
+      <div class="about-item card">
+        <div class="card-body">
+          
+        <h2 class="card-title">アニメの技法</h2>
+        <p class="lead">デジタル時期が来る前に、日本のアニメはpose to pose approachを使用する伝統的なアニメ技法で制作されました。
+        日本のアニメの趨勢は高い原画を少なくし、途中に童話を多く挟み込む技法を使うことであります。
+        既存の使用していたシーンを再利用するリミテッド·アニメーション手法の先駆者であります。
+        ディズニーアニメは動きに重点を置くが、日本アニメはフレームを少し減らして動きが少し不自然な短所を丁寧に克服する手法を用います。
+        </p>
+        </div>
+      </div>
+    </div> 
+    <div class="form-back">
+      
+    <form class="form-card">
+      <div class="form-group">
+        <label for="exampleFormControlInput1" class="lead font-weight-bold">メール　アドレス</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1" class="lead font-weight-bold">選択</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>男性</option>
+          <option>女性</option>
+        </select>
+      </div>
+      <div class="form-group p-2">
+        <label for="exampleFormControlTextarea1"class="lead font-weight-bold">メッセージ</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form>  
+    </div>
+  </div>
+
+  
+
+<script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
