@@ -1,3 +1,4 @@
+
 .btn-ghost {
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
@@ -135,6 +136,7 @@
 
 .button-card {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -154,7 +156,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
   align-self: center;
-  font-size: 1.25rem;
+  ont-size: var(--secondary-size);
   margin: 1rem;
 }
 
@@ -182,7 +184,8 @@
 }
 
 .about-list-item {
-  font-size: 1.25rem;
+  font-size: var(--secondary-size);
+  line-height: 1.8em !important;
 }
 
 .form-card {
@@ -192,4 +195,13 @@
 
 .form-back {
   background-image: url("img/contact-image.jpg");
+}
+
+.text-focus{
+  margin:0.4em;
+}
+
+
+.mark {
+  padding: 0px !important;
 }
