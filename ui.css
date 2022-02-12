@@ -152,14 +152,6 @@
 
 }
 
-.about-inner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-  align-self: center;
-  ont-size: var(--secondary-size);
-  margin: 1rem;
-}
-
 .about-item {
   background-color: white;
   padding: 1rem 2rem;
@@ -171,6 +163,7 @@
   margin-bottom: 1rem;
   text-align: center;
 }
+
 
 .about-list-grid {
   display: grid;
@@ -204,4 +197,32 @@
 
 .mark {
   padding: 0px !important;
+}
+
+/*info */
+
+.info {
+  background-image: url('img/18.jpg');
+  padding:  1em;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  grid-gap: 1em;
+  margin: 5em auto;
+  padding: 1em;
+}
+
+.card > img {
+   width: 100%;
+  aspect-ratio:  16/9;
+  object-fit: cover;
+
+}
+
+.info-title {
+  font-size: 1.25em;
+  text-align: center;
+  color: white;
 }
