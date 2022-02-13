@@ -188,10 +188,16 @@
 
 .form-back {
   background-image: url("img/contact-image.jpg");
+  height: 80vh;
 }
 
 .text-focus{
   margin:0.4em;
+}
+
+.text-focus:hover {
+  font-weight: 900;
+  color: white;
 }
 
 
@@ -225,4 +231,20 @@
   font-size: 1.25em;
   text-align: center;
   color: white;
+}
+
+.info2 {
+  background-image: url('img/info-back.jpg');
+  padding: 1em;
+  margin: 2em auto;
+  height: 100%;
+}
+
+.info-item {
+  margin: 3em auto;
+}
+
+.main {
+  background-color: black;
+  padding: 1em;
 }
